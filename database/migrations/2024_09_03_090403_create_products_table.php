@@ -18,7 +18,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('sku')->unique();
+            $table->string('sku')->unique(); //sku: stock keeping unit
             $table->string('image');
             $table->string('url')->nullable();
             $table->longText('description')->nullable();
